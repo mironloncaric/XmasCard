@@ -31,10 +31,35 @@ body {
     font-size: 2em;
     color: lightcoral;
 }
-
 main {
-    padding: 40px 30px;
+    padding: 80px 80px;
 }
 main p {
     padding: 10px 0px;
+}
+.slika {
+    width: 50%;
+    margin: 0 auto;
+    background: url("slika.jpg") no-repeat center;
+    background-size: cover;
+}
+.card {
+    width: 100%;
+    display: flex;
+}
+.card .text p {
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
+	font-size: 1.5em;
+    }
+    .card {
+	display: initial;
+    }
+    .slika {
+	width: 95%;
+	height: 150px;
+    }
 }
